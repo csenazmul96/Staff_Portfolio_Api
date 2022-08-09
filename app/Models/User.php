@@ -37,6 +37,12 @@ class User extends Authenticatable
         'm_name',
         'avatar',
         'banner',
+        'gender',
+        'casual_leave',
+        'annual_leave',
+        'medical_leave',
+        'other_leave',
+        'maternity_leave',
     ];
 
     /**

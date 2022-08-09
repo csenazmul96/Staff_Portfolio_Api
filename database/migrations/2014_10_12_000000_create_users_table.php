@@ -20,6 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->unsignedBigInteger('designation')->nullable();
             $table->unsignedBigInteger('department')->nullable();
+            $table->string('gender');
             $table->string('office_id')->nullable();
             $table->date('dob')->nullable();
             $table->date('joining_date')->nullable();
@@ -35,6 +36,11 @@ class CreateUsersTable extends Migration
             $table->string('m_name')->nullable();
             $table->string('avatar')->nullable();
             $table->string('banner')->nullable();
+            $table->integer('casual_leave')->nullable();
+            $table->integer('annual_leave')->nullable();
+            $table->integer('medical_leave')->nullable();
+            $table->integer('other_leave')->nullable();
+            $table->integer('maternity_leave')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
             $table->timestamps();
